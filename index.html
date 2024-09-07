@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSED Contact Us</title>
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;400;600;700;800&display=swap" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;700&display=swap" />
+
+  <meta name="description" content="Contact us at CSED. Reach out with your queries or feedback. We are here to assist you and appreciate your interest in our team.">
+<meta name="keywords" content="CSED, Tech, Design, Contact Us, Queries, Feedback, Team">
+<meta name="author" content="CSED Team">
+<meta name="robots" content="index, follow">
+
+<!-- Open Graph Meta Tags for social sharing -->
+<meta property="og:title" content="Contact Us - CSED">
+<meta property="og:description" content="Get in touch with CSED . Whether you have questions or feedback, we are here to help.">
+<meta property="og:image" content="https://example.com/path-to-contact-image.jpg">
+<meta property="og:url" content="https://yourwebsite.com/contact-us">
+<meta property="og:type" content="website">
+
+<!-- Twitter Card Meta Tags -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Contact Us - CSED">
+<meta name="twitter:description" content="Contact CSED for queries or feedback. We are here to assist you and value your input.">
+<meta name="twitter:image" content="https://example.com/path-to-contact-image.jpg">
+
+
+  <!-- Additional Meta Tags -->
+  <link rel="icon" href="tdfav.png" type="image/x-icon">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="background"></div>
+  <div class="shape"></div>
+  <div class="form-container" id="form-container">
+    <h2>CSED - Contact Us</h2>
+    <form id="queries" method="post">
+      <div class="form-group">
+        <label>Event Queries</label>
+        <div class="form-group">
+          <div class="radio-group">
+            <input type="radio" id="StartupStreet" name="event" value="Startup Street">
+            <label for="StartupStreet">Startup Street</label>
+
+            <input type="radio" id="AuctionToAuction" name="event" value="Auction to Auction">
+            <label for="AuctionToAuction">Auction to Action</label>
+          </div>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your full Name" required>
+      </div>
+      <div class="form-group">
+        <label for="regNo">Registration Number:</label>
+        <input type="text" id="regNo" name="regNo" placeholder="Enter your registration number" minlength="9" maxlength="9" required>
+      </div>
+      <div class="form-group">
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" placeholder="Phone number" pattern="\d*" minlength="10" maxlength="10" required>
+      </div>
+      <div class="form-group">
+        <label for="queriesText">Write your queries!</label>
+        <textarea id="queriesText" name="queries" placeholder="Briefly write your queries!" required></textarea>
+      </div>
+      <div class="form-group buttons">
+        <button type="button" id="clearBtn">Clear</button>
+        <button type="submit" id="submitBtn">Submit</button>
+      </div>
+    </form>
+  </div>
+    <div class="submit-message" id="submitMessage">
+      <p>Your response has been submitted! We'll be in touch soon. <br> <br><b>Follow our <a href="https://whatsapp.com/channel/0029VahiEl0B4hdb9MylqS3Q" target="_blank">WhatsApp channel</a> for updates!</b></p>
+    </div>
+  
+  <script src="script.js"></script>
+</body>
+</html>
